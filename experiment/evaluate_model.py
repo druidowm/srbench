@@ -130,6 +130,8 @@ def evaluate_model(dataset, results_path, random_state, est_name, est,
     else:
         cv = KFold(n_splits=n_splits, shuffle=True,random_state=random_state)
 
+        print(hyper_params)
+
         grid_est = HalvingGridSearchCV(est,cv=cv, param_grid=hyper_params,
                 verbose=2, n_jobs=1, scoring='r2', error_score=0.0)
 

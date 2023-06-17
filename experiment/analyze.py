@@ -172,7 +172,7 @@ if __name__ == '__main__':
                         continue
 
                 
-                all_commands.append('python {SCRIPT}.py '
+                all_commands.append('python3 {SCRIPT}.py '
                                     '{DATASET}'
                                     ' -ml {ML}'
                                     ' -results_path {RDIR}'
